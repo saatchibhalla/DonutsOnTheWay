@@ -36,6 +36,7 @@ class GoogleMap extends Component {
   callback(results, status) {
     var service = new google.maps.places.PlacesService(this.refs.map);
     var infoWindow = new google.maps.InfoWindow();
+
     var map = new google.maps.Map(this.refs.map, {
       zoom: 12,
       center: { lat: this.props.lat, lng: this.props.lon }

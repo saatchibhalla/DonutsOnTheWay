@@ -14,8 +14,8 @@ class UserLocation extends Component {
   }
 
   loadMap() {
-    const lat = 37.7763; //TODO: CHANGE BACK this.props.location.location.lat;
-    const lon = -122.4328; //this.props.location.location.lng;
+    const lat = this.props.location.location.lat;
+    const lon = this.props.location.location.lng;
     return <GoogleMap className="col-md-4" lon={lon} lat={lat} />;
   }
 
