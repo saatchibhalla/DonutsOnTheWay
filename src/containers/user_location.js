@@ -16,6 +16,8 @@ class UserLocation extends Component {
   loadMap() {
     const lat = this.props.location.location.lat;
     const lon = this.props.location.location.lng;
+    //TODO:const lat = 37.3512732
+    //TODO:const lon = -122.0269045
     return <GoogleMap className="col-md-4" lon={lon} lat={lat} />;
   }
 
