@@ -7,7 +7,6 @@ export const FETCH_LOCATION = 'FETCH_LOCATION';
 
 export function fetchLocation() {
   const request = axios.post(URL); //Promise
-
   return {
     type: FETCH_LOCATION,
     payload: request

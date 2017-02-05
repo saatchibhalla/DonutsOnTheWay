@@ -1,0 +1,66 @@
+.btn-heading {
+  display: inline;
+}
+.theButton {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.location-map {
+  vertical-align: top;
+  display: inline-block;
+}
+.location-shops {
+  vertical-align: top;
+  display: inline-block;
+}
+.theMap {
+  height: 400px;
+  width: 450px;
+  background: transparent url(images/loading.gif) no-repeat center center;
+}
+.transportation {
+  vertical-align: top;
+  display: inline-block;
+}
+.transport-group .loc-page {
+  text-align: center;
+}
+.loc-title {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.loc-page {
+  margin: 0 auto;
+}
+.transport-selected {
+  border: 5px solid;
+}
+.list-group-item {
+  cursor: pointer;
+}
+.nav {
+  max-height: 400px;
+  overflow-y:scroll;
+}
+.list-group-item.true {
+  background-color: #f4c842 !important;
+}
+.list-group-item:hover {
+  background-color: #eee;
+}
+.list-group .list-group-item {
+	display: inline-block;
+}
+.store-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.directions {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 2%;
+}

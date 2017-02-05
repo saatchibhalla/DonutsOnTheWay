@@ -1,29 +1,32 @@
 import React, {Component} from 'react';
-import GoogleMaps from '../components/google_maps';
+import GoogleMap from '../components/google_maps';
 import { fetchLocation } from '../actions/get_location';
 import { connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-
 class UserLocation extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      donutShops: []
+    };
+    this.loadMap = this.loadMap.bind(this);
   }
-  getLocation() {
-    if (this.props.location.location) {
-      const lat = this.props.location.location.lat;
-      const lon = this.props.location.location.lng;
-      return <GoogleMaps lon={lon} lat={lat} />
-    }
-    else {
-      console.log("NAY");
-    }
+
+  loadMap() {
+    const lat = 37.7763; //TODO: CHANGE BACK this.props.location.location.lat;
+    const lon = -122.4328; //this.props.location.location.lng;
+    return <GoogleMap className="col-md-4" lon={lon} lat={lat} />;
   }
+
   render() {
      return (
        <div>
-          <button onClick={this.props.fetchLocation}> Find My Location </button>
-          <div> {this.getLocation()} </div>
+         <div className="theButton">
+            <button className="btn" onClick={this.props.fetchLocation}> Find My Location </button>
+            <p className="btn-heading"> Press this button to get your starting location. </p>
+         </div>
+         <div> {this.props.location.location? this.loadMap() : ""} </div>
        </div>
       );
   }
