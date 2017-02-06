@@ -25,11 +25,10 @@ Open localhost:8080 in your browser once you see the bundle has compiled success
 
 ![Map](http://i.imgur.com/j0e0Vll.png)
 
-### After choosing your method of transportation, your directions will be presented below.
+### Choose your method of transportation and your directions will be presented below.
 
 ![Map](http://i.imgur.com/u1h6Udf.png)
 
-Live Demo:
-
+### Live Demo:
 
 [![Demo](http://img.youtube.com/vi/kHkhaSxOrS4/0.jpg)](http://www.youtube.com/watch?v=kHkhaSxOrS4)
