@@ -27,7 +27,7 @@ Open localhost:8080 in your browser once you see the bundle has compiled success
 
 ### Choose your method of transportation and your directions will be presented below.
 
-![Map](http://i.imgur.com/u1h6Udf.png)
+![Map](http://i.imgur.com/FeE46GW.png)
 
 ### Live Demo:
 
