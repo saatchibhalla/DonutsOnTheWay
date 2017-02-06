@@ -22,4 +22,4 @@ Open localhost:8080 in your browser once you see the bundle has compiled success
 
 ## Demo
 
-![Demo](https://github.com/saatchibhalla/DonutsOnTheWay/blob/master/DonutsOnTheWay.mov)
+![Demo](http://sendvid.com/50d4x276)
