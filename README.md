@@ -22,4 +22,4 @@ Open localhost:8080 in your browser once you see the bundle has compiled success
 
 ## Demo
 
-![Demo](http://sendvid.com/50d4x276)
+<iframe width="560" height="315" src="//sendvid.com/embed/50d4x276" frameborder="0" allowfullscreen></iframe>
