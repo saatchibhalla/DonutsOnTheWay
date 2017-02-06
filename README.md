@@ -21,5 +21,12 @@ $ npm start
 Open localhost:8080 in your browser once you see the bundle has compiled successfully in terminal. 
 
 ## Demo
+Upon finding your location, you can scroll through the 5 nearest Donut Shops to you.
+![Map](http://i.imgur.com/rcgMVU6.png)
 
-<iframe width="560" height="315" src="//sendvid.com/embed/50d4x276" frameborder="0" allowfullscreen></iframe>
+After choosing your method of transportation, your directions will be presented below.
+
+![Map](http://i.imgur.com/u1h6Udf.png)
+
+Live Demo:
+[![Demo](http://img.youtube.com/vi/kHkhaSxOrS4/0.jpg)](http://www.youtube.com/watch?v=kHkhaSxOrS4)
