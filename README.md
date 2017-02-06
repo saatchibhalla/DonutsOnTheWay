@@ -19,3 +19,6 @@ $ npm start
 ```
 
 Open localhost:8080 in your browser once you see the bundle has compiled successfully in terminal. 
+
+## Demo
+
