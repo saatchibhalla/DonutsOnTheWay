@@ -9,12 +9,10 @@ class TransportationList extends Component {
     };
     this.selectMethod = this.selectMethod.bind(this);
   }
-
   selectMethod(selection) {
     this.setState({selected: selection });
     this.props.onTransportSelect(selection);
   }
-
   render() {
     return (
         <div className="transport-group">

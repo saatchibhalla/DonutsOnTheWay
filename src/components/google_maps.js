@@ -5,6 +5,8 @@ import DisplayDirections from './display_directions';
 import Scroll from 'react-scroll';
 var scroll = Scroll.animateScroll;
 
+//Displays Map, gets local donut shops, get directions after both donut shop and
+//method of transportation are selected
 class GoogleMap extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +23,6 @@ class GoogleMap extends Component {
     this.getDirections = this.getDirections.bind(this);
   }
   componentDidMount() {
-
     setTimeout(function(){ scroll.scrollTo(250) }, 500);
     const {lat,lon} = this.props;
     const currLocation = new google.maps.LatLng(lat,lon);
@@ -79,6 +80,7 @@ class GoogleMap extends Component {
      position: {lat:this.props.lat, lng:this.props.lon},
      map: map
    });
+   //ClickTime marker
    var destinationMarker = new google.maps.Marker({
      position: {lat:37.7855, lng:-122.3971},
      icon: {
@@ -95,7 +97,6 @@ class GoogleMap extends Component {
  }
   onShopSelect(selectedShopID, selectedShop) {
     this.setState({selectedShop, selectedShopID});
-
   }
   onTransportSelect(selectedTransport) {
     this.setState({selectedTransport});
@@ -113,6 +114,7 @@ class GoogleMap extends Component {
       const mode = this.state.selectedTransport;
       const donutShop = this.state.selectedShop.geometry.location;
       const destination = "282 2nd Street 4th floor, San Francisco, CA 94105";
+      //Public transportation must make two separate requests, first leg to donuts, second leg to ClickTime
       if (mode === "TRANSIT") {
         let fullResponse;
         let request1 = {

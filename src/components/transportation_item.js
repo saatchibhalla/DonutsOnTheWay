@@ -3,7 +3,6 @@ import Scroll from 'react-scroll';
 var scroll = Scroll.animateScroll;
 
 class TransportationItem extends Component {
-
   constructor(props) {
     super(props);
     this.state = {

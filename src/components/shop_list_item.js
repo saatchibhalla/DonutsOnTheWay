@@ -1,6 +1,7 @@
 
 import React, {Component} from 'react';
 
+//Each Shop: title, icon, and rating. 
 class ShopListItem extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +25,6 @@ class ShopListItem extends Component {
         }
       }
     });
-
     this.state = {
       imgURL: ""
     }

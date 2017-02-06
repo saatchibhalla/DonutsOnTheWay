@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import UserLocation from '../containers/user_location';
 
+//Initial Start screen
 export default class App extends Component {
   render() {
     const insiderTipStyle = {

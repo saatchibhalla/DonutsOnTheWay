@@ -6,6 +6,7 @@ const URL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${API_KEY}`
 export const FETCH_LOCATION = 'FETCH_LOCATION';
 
 export function fetchLocation() {
+  //make request for user's location
   const request = axios.post(URL); //Promise
   return {
     type: FETCH_LOCATION,

@@ -12,15 +12,13 @@ class UserLocation extends Component {
     };
     this.loadMap = this.loadMap.bind(this);
   }
-
   loadMap() {
-    //const lat = this.props.location.location.lat;
-    //const lon = this.props.location.location.lng;
-    const lat = 37.7925;
-    const lon = -122.4382;
+    const lat = this.props.location.location.lat;
+    const lon = this.props.location.location.lng;
+    //TEST:PACIFIC HEIGHTS const lat = 37.7925;
+    //TEST:PACIFIC HEIGHTS const lon = -122.4382;
     return <GoogleMap className="col-md-4" lon={lon} lat={lat} />;
   }
-
   render() {
      return (
        <div>

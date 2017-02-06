@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Scroll from 'react-scroll';
 var scroll = Scroll.animateScroll;
 
+//parse returned directions from Google Maps, already formatted
 class DisplayDirections extends Component {
   constructor (props) {
     super(props);
