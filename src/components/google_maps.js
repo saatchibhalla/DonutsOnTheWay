@@ -21,6 +21,7 @@ class GoogleMap extends Component {
     this.getDirections = this.getDirections.bind(this);
   }
   componentDidMount() {
+
     setTimeout(function(){ scroll.scrollTo(250) }, 500);
     const {lat,lon} = this.props;
     const currLocation = new google.maps.LatLng(lat,lon);

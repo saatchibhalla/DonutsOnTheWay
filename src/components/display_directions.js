@@ -6,7 +6,6 @@ class DisplayDirections extends Component {
   constructor (props) {
     super(props);
   }
-
   render() {
     let instructions = "";
     const directions = this.props.directions;
@@ -19,7 +18,6 @@ class DisplayDirections extends Component {
         instructions = instructions + "<b>BUY SOME DONUTS!!</b> <br/><br/>";
       }
     }
-    scroll.scrollToBottom();
     return <div className="directions" dangerouslySetInnerHTML={{__html: instructions}} />;
 
   }

@@ -26,7 +26,7 @@ class TransportationItem extends Component {
     else {
       className = ""
     }
-    scroll.scrollToBottom();
+    scroll.scrollTo(1050);
     return (
       <div className="transportation">
         <input className={className} type="image" style={iconStyle} src={imageFilePath} onClick={(event) => this.handleOnClick()} />
